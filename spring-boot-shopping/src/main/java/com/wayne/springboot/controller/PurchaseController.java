@@ -20,7 +20,7 @@ public class PurchaseController {
 
     @PostMapping("/purchase")
     public Result purchase(Long userId, Long productId, Integer quantity){
-        boolean success = purchaseService.purchase(userId, productId, quantity);
+        boolean success = purchaseService.purchaseRedis(userId, productId, quantity);
         String message = success?"抢购成功":"抢购失败";
         Result result = new Result(success, message);
         return result;

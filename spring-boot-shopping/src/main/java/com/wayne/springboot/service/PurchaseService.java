@@ -1,5 +1,9 @@
 package com.wayne.springboot.service;
 
+import com.wayne.springboot.pojo.PurchaseRecordPo;
+
+import java.util.List;
+
 public interface PurchaseService {
 
     /*
@@ -10,4 +14,7 @@ public interface PurchaseService {
     * @return 成功 or 失败
     * */
     public boolean purchase(Long userId, Long productId, int quantity);
+
+    public boolean purchaseRedis(Long userId,Long productId,int quantity);
+    public boolean dealRedisPurchase(List<PurchaseRecordPo> prpList);
 }

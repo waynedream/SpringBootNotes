@@ -21,10 +21,10 @@
 	<properties>
 		<java.version>1.8</java.version>
         <!--设置thymeleaf的版本-->
-        <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
-        <!--其中布局功能的支持程序  thymeleaf3主程序必须要与 layout2以上版本匹配-->
-        <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>
-	    <!--=================-->
+		<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+		<!--其中布局功能的支持程序  thymeleaf3主程序必须要与 layout2以上版本匹配-->
+		<thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>
+		<!--=================-->
     </properties>
 
 
